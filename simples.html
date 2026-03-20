@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="simples.css">
+</head>
+<body>
+    <div class="layout">
+        <input type="text" class="number1" placeholder="Primeiro número">
+        <input type="text" class="number2" placeholder="Segundo número">
+        
+            
+        <table>
+            <tr>
+                <td><button onclick="insert ('+')" class="button">+</button></td>
+                <td><button onclick="insert('-')" class="button">-</button></td>
+                <td><button onclick="insert('*')" class="button">x</button></td>
+                <td><button onclick="insert('/')" class="button">/</button></td>
+                
+            </tr>
+            <tr>
+                <td><button class="button" onclick="calcular()">=</button></td>
+            </tr>
+        </table>
+        <p id="result"></p>      
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
