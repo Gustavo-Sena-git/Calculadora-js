@@ -32,7 +32,7 @@ function insert(op) {
     operador = op;
 }
 
-function calcular(){
+function calcula(){
     number1 = parseFloat(document.querySelector('.number1').value);
     number2 = parseFloat(document.querySelector('.number2').value);
 
@@ -50,3 +50,9 @@ function calcular(){
 
     document.getElementById('result').textContent = "Resultado:" + resultado 
 }
+
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Enter' || event.key === '=') {
+        calcula();
+    }
+});
